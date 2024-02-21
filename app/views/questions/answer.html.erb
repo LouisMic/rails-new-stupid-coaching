@@ -1,0 +1,12 @@
+<div class="container d-flex flex-column align-items-left">
+  <div class="ms-4"><h1>Stupid coaching</h1></div>
+  <div class="container d-flex flex-column p-3 border-start border-start-5">
+    <%= @question %>
+    <div class="mt-3"><i>-You</i></div>
+  </div>
+  <div class="container d-flex flex-column bg-warning bg-opacity-10 p-3 border-start border-start-5">
+    <b><%= @answer %></b>
+    <div class="mt-3"><i>-Your coach</i></div>
+  </div>
+  <div class="ms-4 mt-3"><%= link_to 'Ask a new question', ask_path, class: "text-decoration-none" %></div>
+</div>
